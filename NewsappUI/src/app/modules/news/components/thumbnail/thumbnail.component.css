@@ -1,0 +1,29 @@
+.news-thumbnail {
+    margin: 20px;
+}
+
+.news-image {
+    cursor: pointer;
+}
+
+.news-content {
+    height: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.news-content::-webkit-scrollbar {
+    width: 2px;
+    background: gray;
+}
+
+.news-actions {
+    text-align: right;
+}
+
+.card-header {
+    height: 70px;
+}
+
+@media screen and (max-width: 500px) {
+    
+}

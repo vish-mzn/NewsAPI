@@ -1,0 +1,12 @@
+:host {
+    height: 100vh;
+}
+.news-container {
+    margin: auto;
+    width: 70vw;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    height: 100vh;
+    /* overflow-x: auto; */
+}

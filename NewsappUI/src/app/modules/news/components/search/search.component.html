@@ -1,0 +1,10 @@
+<div class="image-bg">
+  <div class="flex-container" >
+        <mat-form-field>
+          <input id="search-button-input" matInput type='text' #box (keyup.enter)="onEnter(box.value)">
+          <mat-placeholder> Search you articles here</mat-placeholder>
+        </mat-form-field>
+  </div>
+    
+  <app-container [newsList]='newsList'></app-container>
+</div>

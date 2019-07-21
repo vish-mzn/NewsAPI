@@ -1,0 +1,16 @@
+<mat-toolbar color="#91b1f2">
+    <span>News-Search-Engine</span>
+
+    <span class="align">
+        <button mat-button [routerLink]="['/news/dashboard']">Home</button>
+        <button id='searchPage' mat-button [routerLink]="['/news/search']">Search</button>
+        <button id='favoritePage' mat-button [routerLink]="['/news/favouritelist']">My Articles</button>
+    </span>
+
+    <span>
+        <button *ngIf="isLoggedIn()" id='logout' mat-button (click)="logout()">Logout</button>
+    </span>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>

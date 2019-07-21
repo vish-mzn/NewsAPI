@@ -1,0 +1,18 @@
+<mat-card class="news-thumbnail">
+  <mat-card-header class="card-header card-thumbnail">
+      <mat-card-title class="newsTitle">{{news?.title}}</mat-card-title>
+      <mat-card-subtitle>publishedAt {{news?.publishedAt}}</mat-card-subtitle>
+  </mat-card-header>
+  
+  <img class="news-image" mat-card-image [src]='news?.urlToImage' [alt]="">
+
+  <mat-card-content class="news-content">
+      {{news?.content}}.........<a href={{news?.url}} target="_blank">jump to full article.</a>
+  </mat-card-content>
+  
+  <mat-card-actions class="news-actions">
+    <button *ngIf="!useWatchlistApi" mat-raised-button color="primary" (click)="addToWatchlist()" class="addButton">Add to My Articles</button>
+    <button *ngIf="useWatchlistApi" mat-raised-button color="primary" (click)="deleteFromWatchlist()">Delete</button>
+  </mat-card-actions>
+
+</mat-card>

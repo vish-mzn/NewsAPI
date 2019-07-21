@@ -1,0 +1,9 @@
+.mat-form-field-infix {
+    padding: .5em 0;
+    border: 2px solid black;
+    border-radius: 0.5;
+}
+
+.align {
+    flex: auto;
+}
